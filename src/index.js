@@ -32,7 +32,7 @@ if(arguments.length > 0){
             break;
 
             case "--search":
-                imported_options.search = toLowerCase(arguments[i+1])
+                imported_options.search = arguments[i+1].toLowerCase()
             break;
 
             case "--mongo":
@@ -89,10 +89,10 @@ active_scan.on("result", async response_data => {
             players: ping_response.players,
             description: ping_response.description.text,
             ip: response_data.ip,
-            searched: imported_options.search ? toLowerCase(profile.description).includes(imported_options.search) : false
+            searched: imported_options.search ? profile.description.toLowerCase().includes(imported_options.search) : false
         }
 
-        if(imported_options.search ? toLowerCase(profile.description).includes(imported_options.search) : false){
+        if(imported_options.search ? profile.description.toLowerCase().includes(imported_options.search) : false){
             console.log(`[MineScanner] Found priority server, ${imported_options.search} : ${response_data.ip}`)
         }
 
