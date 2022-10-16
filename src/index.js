@@ -44,7 +44,6 @@ if(arguments.length > 0){
             break;
 
             case "--uri":
-                console.log(`COn ${arguments[i+1]}`)
                 const db = monk(arguments[i+1])
 
                 db.then( () => {
