@@ -8,21 +8,12 @@ Ouputs are sent to a mongodb database if provided, or printed out to console.
 
 ### Installing
 
-Clone the repository
+Run the following commands to install and run MineScanner
 
-`git clone https://github.com/TesDevelopment/MineScanner.git`
-
-Enter the folder
-
-`cd MineScanner`
-
-Install dependancies
-
-`npm i`
-
-Run the scanner
-
-`node . (options)`
+`git clone https://github.com/TesDevelopment/MineScanner.git
+cd MineScanner
+npm i
+node .`
 
 
 ### Options
