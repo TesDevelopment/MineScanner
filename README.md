@@ -16,6 +16,10 @@ Enter the folder
 
 `cd MineScanner`
 
+Install dependancies
+
+`npm i`
+
 Run the scanner
 
 `node . (options)`
