@@ -1,4 +1,4 @@
-### MineScanner
+# MineScanner
 
 Mine scanner is a simple utility for scanning the internet for minecraft servers.
 
@@ -6,7 +6,7 @@ Ouputs are sent to a mongodb database if provided, or printed out to console.
 
 ## Usage
 
-# Installing
+### Installing
 
 Clone the repository
 
@@ -21,7 +21,7 @@ Run the scanner
 `node . (options)`
 
 
-# Options
+### Options
 
 `--verbose enabled`: logs all data received
 
